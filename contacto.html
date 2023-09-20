@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=Noto+Serif+Khitan+Small+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="unop.gif" >
+        </h1>
+        <nav>
+            <ul >
+                <ion-icon name="home-outline"></ion-icon>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" class="formu" method="post" >
+
+            <label class="formu" for="Nombre">Nombre</label>
+            <input class="formu" type="text" name="Nombre" required placeholder="Nombre y apellido">
+
+            <label for="email"class="formu" >Email</label>
+            <input type="email" required class="formu" name="email" >
+
+            <label for="tel"class="formu" >Telefono</label>
+            <input type="tel" name="tel"class="formu"  minlength="7" maxlength="10" pattern="(/[0-9]/)">
+
+            <label for="comen"class="formu" >Comentario</label>
+            <textarea name="comen" id="" class="formu" cols="30" rows="5"></textarea>
+
+            <label for=""class="formu" >Como desea contacten</label>
+            <label for=""class="formu" ><input type="checkbox" checked>WhatsApp</label>
+            <label for=""class="formu" ><input type="checkbox" >Correo</label>
+            <label for=""class="formu" > <input type="checkbox" >Telefono</label>
+
+            <label for=""class="formu" >Ciudad</label>
+            <select name="" id=""class="formu" >
+                <option value="">Bogota</option>
+                <option value="">Cali</option>
+                <option value="">Medellin</option>
+            </select>
+           
+            <label for=""class="formu" >Calificacion</label>
+            <input type="number" min="1" max="5" >
+
+            <label for=""class="formu" >Fecha</label>
+            <input type="datetime-local" class="formu" >
+
+            <input type="submit" value="Enviar"class="formu" >
+
+
+        </form>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15907.496784516788!2d-74.0887461!3d4.6165218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f997e6b31c7cf%3A0xf5da36a74733e63b!2sSuper%20CADE%20CAD!5e0!3m2!1ses!2sco!4v1691720173679!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+</body>
+</html>

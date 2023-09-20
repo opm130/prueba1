@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=Noto+Serif+Khitan+Small+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+ <script>
+    $(document).ready(function(){
+        $("#vid").hide().fadeIn(2500);
+        var imagen=$("#imgp").attr("src");
+        $("#imgp2").hide();
+        $("#imgp").hide().fadeIn(2500);
+        $("#imgp").bind("click",imagen,abre);
+        function abre(e){
+            e.stopPropagation();
+            $("#imgp2").fadeIn(1000);
+            $("#imgp").replaceWith('<img id="imgp2" src="e.data" >');
+        }
+        $(document).bind("click keypress",function(){
+            $("#imgp2").fadeOut(1000);
+        })
+    });
+ </script>
+</head>
+<body>
+    <header>
+        <h1>
+            <img id="portada" src="unop.gif" >
+        </h1>
+        <nav>
+            <ul >
+                <ion-icon name="home-outline"></ion-icon>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section>
+        <h2 class="Titulo">Esta es mi pagina</h2>
+        <img id="imgp2" src="referen1.jpg" >
+        <img id="imgp" src="referen.jpg" >
+        <p id="parrafo">
+            El zapato es un accesorio pedestre de la vestimenta hecho con la intención de proveer protección y comodidad al pie, mientras este realiza varias actividades. Al conjunto de todo tipo de accesorios pedestres se le denomina calzado.
+            Los zapatos, como el resto de las prendas, también se diseñan atendiendo a fines estéticos y/u ortopédicos. El diseño de los zapatos ha variado enormemente a través del tiempo y de cultura en cultura, con su apariencia originalmente ligada a sus funciones. Adicionalmente, la moda ha dictado frecuentemente muchos elementos de diseño, como la altura de los tacones y el tejido de estos.
+            El calzado contemporáneo varía ampliamente en estilo, complejidad y costo. Una sandalia básica puede consistir en una suela delgada y un amarre simple. Los zapatos de moda pueden estar hechos de materiales muy caros en construcciones complejas y vendidos por miles de dólares el par. Otros zapatos son para propósitos muy específicos, tales como los diseñados para escalada de montañas o esquiar.
+        </p>
+    </section>
+    <section>
+        <iframe id="vid" src="https://www.youtube.com/embed/91z-VmYNdZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+</main>
+
+<footer>
+    
+blog
+© 2013-2023 Rock Content
+</footer>
+
+</body>
+</html>
